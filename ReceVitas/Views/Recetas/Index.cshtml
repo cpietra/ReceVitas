@@ -1,0 +1,21 @@
+﻿@model ReceVitas.Models.ModelRecetas
+@using ReceVitas.Clases
+@{
+    ViewData["Title"] = "Recetas";
+    DaoMedicamentos daoMedicamentos = new DaoMedicamentos();
+    DaoPadron daoPadron = new DaoPadron();
+    IEnumerable<SelectListItem> Medic = daoMedicamentos.GetMedicamentos(); //.ToDictionary(x => x.id_medicamento.ToString(), x => x.nombre);
+    IEnumerable<SelectListItem> Padron = daoPadron.GetPadron();
+}
+
+<h2>Recetas</h2>
+
+<div class="form-group">
+    <label>Afiliado</label>
+    @Html.DropDownListFor(x => x.pad1.numero, Padron)
+</div>
+
+<div class="form-group">
+    <label>Medicamento</label>
+    @Html.DropDownListFor(x => x.med1.id_medicamento, Medic)
+</div>

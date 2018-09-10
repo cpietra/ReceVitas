@@ -1,0 +1,25 @@
+﻿@model ReceVitas.Models.SampleViewModel
+@{
+    ViewData["Title"] = "View";
+}
+
+<h2>View</h2>
+<form method="post" enctype="multipart/form-data" asp-controller="Upload" asp-action="Index">
+    <div class="form-group">
+        <div class="col-md-10">
+            <p>Suba uno o más archivos usando este formulario:</p>
+            <input type="file" name="files" accept=".txt, .cvs" />
+            <div class="form-group">
+                @Html.CheckBoxFor(x => x.TermsAndConditions)
+                @Html.LabelFor(x => x.TermsAndConditions)
+                @Html.ValidationMessageFor(x => x.TermsAndConditions)
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-10">
+            <input type="submit" value="Subir" />
+        </div>
+    </div>
+</form>
+

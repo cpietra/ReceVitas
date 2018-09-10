@@ -1,0 +1,240 @@
+﻿@model ReceVitas.Models.Padron
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>Padron</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="plan" class="control-label"></label>
+                <input asp-for="plan" class="form-control" />
+                <span asp-validation-for="plan" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="categoria" class="control-label"></label>
+                <input asp-for="categoria" class="form-control" />
+                <span asp-validation-for="categoria" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="numero" class="control-label"></label>
+                <input asp-for="numero" class="form-control" />
+                <span asp-validation-for="numero" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="orden" class="control-label"></label>
+                <input asp-for="orden" class="form-control" />
+                <span asp-validation-for="orden" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="tipo_doc" class="control-label"></label>
+                <input asp-for="tipo_doc" class="form-control" />
+                <span asp-validation-for="tipo_doc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="num_doc" class="control-label"></label>
+                <input asp-for="num_doc" class="form-control" />
+                <span asp-validation-for="num_doc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="nombre" class="control-label"></label>
+                <input asp-for="nombre" class="form-control" />
+                <span asp-validation-for="nombre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="sexo" class="control-label"></label>
+                <input asp-for="sexo" class="form-control" />
+                <span asp-validation-for="sexo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ecivil" class="control-label"></label>
+                <input asp-for="ecivil" class="form-control" />
+                <span asp-validation-for="ecivil" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="f_nacimiento" class="control-label"></label>
+                <input asp-for="f_nacimiento" class="form-control" />
+                <span asp-validation-for="f_nacimiento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="nacionalidad" class="control-label"></label>
+                <input asp-for="nacionalidad" class="form-control" />
+                <span asp-validation-for="nacionalidad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="parentesco" class="control-label"></label>
+                <input asp-for="parentesco" class="form-control" />
+                <span asp-validation-for="parentesco" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="vive_calle" class="control-label"></label>
+                <input asp-for="vive_calle" class="form-control" />
+                <span asp-validation-for="vive_calle" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="vive_numero" class="control-label"></label>
+                <input asp-for="vive_numero" class="form-control" />
+                <span asp-validation-for="vive_numero" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="vive_piso" class="control-label"></label>
+                <input asp-for="vive_piso" class="form-control" />
+                <span asp-validation-for="vive_piso" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="vive_depto" class="control-label"></label>
+                <input asp-for="vive_depto" class="form-control" />
+                <span asp-validation-for="vive_depto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="vive_cod_postal" class="control-label"></label>
+                <input asp-for="vive_cod_postal" class="form-control" />
+                <span asp-validation-for="vive_cod_postal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="vive_localidad_texto" class="control-label"></label>
+                <input asp-for="vive_localidad_texto" class="form-control" />
+                <span asp-validation-for="vive_localidad_texto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="vive_localidad" class="control-label"></label>
+                <input asp-for="vive_localidad" class="form-control" />
+                <span asp-validation-for="vive_localidad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="vive_partido" class="control-label"></label>
+                <input asp-for="vive_partido" class="form-control" />
+                <span asp-validation-for="vive_partido" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="vive_provincia" class="control-label"></label>
+                <input asp-for="vive_provincia" class="form-control" />
+                <span asp-validation-for="vive_provincia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="telefono" class="control-label"></label>
+                <input asp-for="telefono" class="form-control" />
+                <span asp-validation-for="telefono" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="movil" class="control-label"></label>
+                <input asp-for="movil" class="form-control" />
+                <span asp-validation-for="movil" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="email" class="control-label"></label>
+                <input asp-for="email" class="form-control" />
+                <span asp-validation-for="email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="f_ingreso" class="control-label"></label>
+                <input asp-for="f_ingreso" class="form-control" />
+                <span asp-validation-for="f_ingreso" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="prepaga_anterior" class="control-label"></label>
+                <input asp-for="prepaga_anterior" class="form-control" />
+                <span asp-validation-for="prepaga_anterior" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="f_egreso" class="control-label"></label>
+                <input asp-for="f_egreso" class="form-control" />
+                <span asp-validation-for="f_egreso" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="prepaga_proxima" class="control-label"></label>
+                <input asp-for="prepaga_proxima" class="form-control" />
+                <span asp-validation-for="prepaga_proxima" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="volveria" class="control-label"></label>
+                <input asp-for="volveria" class="form-control" />
+                <span asp-validation-for="volveria" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="motivo_baja_miembro" class="control-label"></label>
+                <input asp-for="motivo_baja_miembro" class="form-control" />
+                <span asp-validation-for="motivo_baja_miembro" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="motivo_baja_miembro_agrupado" class="control-label"></label>
+                <input asp-for="motivo_baja_miembro_agrupado" class="form-control" />
+                <span asp-validation-for="motivo_baja_miembro_agrupado" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="cobrador" class="control-label"></label>
+                <input asp-for="cobrador" class="form-control" />
+                <span asp-validation-for="cobrador" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="zona" class="control-label"></label>
+                <input asp-for="zona" class="form-control" />
+                <span asp-validation-for="zona" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="f_alta_grupo" class="control-label"></label>
+                <input asp-for="f_alta_grupo" class="form-control" />
+                <span asp-validation-for="f_alta_grupo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="f_antiguedad1" class="control-label"></label>
+                <input asp-for="f_antiguedad1" class="form-control" />
+                <span asp-validation-for="f_antiguedad1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="promotor" class="control-label"></label>
+                <input asp-for="promotor" class="form-control" />
+                <span asp-validation-for="promotor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="tipo_grupo" class="control-label"></label>
+                <input asp-for="tipo_grupo" class="form-control" />
+                <span asp-validation-for="tipo_grupo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="presento" class="control-label"></label>
+                <input asp-for="presento" class="form-control" />
+                <span asp-validation-for="presento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="f_baja" class="control-label"></label>
+                <input asp-for="f_baja" class="form-control" />
+                <span asp-validation-for="f_baja" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="motivo_baja_grupo" class="control-label"></label>
+                <input asp-for="motivo_baja_grupo" class="form-control" />
+                <span asp-validation-for="motivo_baja_grupo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="motivo_baja_agrupado_grupo" class="control-label"></label>
+                <input asp-for="motivo_baja_agrupado_grupo" class="form-control" />
+                <span asp-validation-for="motivo_baja_agrupado_grupo" class="text-danger"></span>
+            </div>            
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input asp-for="paciente_cronico" /> @Html.DisplayNameFor(model => model.paciente_cronico)
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

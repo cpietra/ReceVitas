@@ -1,0 +1,90 @@
+﻿@model ReceVitas.Models.Medicamentos
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Medicamentos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.atc)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.atc)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.generico)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.generico)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.nombre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.presentacion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.presentacion)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.pvp)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.pvp)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.acargoos)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.acargoos)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.acargoafil)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.acargoafil)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.laboratorio)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.laboratorio)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.registro)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.registro)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.pr)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.pr)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.grupoter)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.grupoter)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.obser)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.obser)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.id_medicamento">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

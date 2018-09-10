@@ -1,0 +1,101 @@
+﻿@model IEnumerable<ReceVitas.Models.Medicamentos>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.atc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.generico)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.presentacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.pvp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.acargoos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.acargoafil)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.laboratorio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.registro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.pr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.grupoter)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.obser)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.atc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.generico)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.presentacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.pvp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.acargoos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.acargoafil)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.laboratorio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.registro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.pr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.grupoter)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.obser)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.id_medicamento">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.id_medicamento">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.id_medicamento">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

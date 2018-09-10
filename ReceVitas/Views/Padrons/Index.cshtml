@@ -1,0 +1,335 @@
+﻿@model IEnumerable<ReceVitas.Models.Padron>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.plan)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.categoria)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.numero)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.orden)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tipo_doc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.num_doc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.sexo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ecivil)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.f_nacimiento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nacionalidad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.parentesco)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.vive_calle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.vive_numero)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.vive_piso)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.vive_depto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.vive_cod_postal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.vive_localidad_texto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.vive_localidad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.vive_partido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.vive_provincia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.telefono)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.movil)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.f_ingreso)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.prepaga_anterior)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.f_egreso)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.prepaga_proxima)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.volveria)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.motivo_baja_miembro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.motivo_baja_miembro_agrupado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cobrador)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.zona)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.f_alta_grupo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.f_antiguedad1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.promotor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tipo_grupo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.presento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.f_baja)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.motivo_baja_grupo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.motivo_baja_agrupado_grupo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.paciente_cronico)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.plan)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.categoria)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.numero)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.orden)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.tipo_doc)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.num_doc)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.sexo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ecivil)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.f_nacimiento)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nacionalidad)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.parentesco)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.vive_calle)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.vive_numero)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.vive_piso)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.vive_depto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.vive_cod_postal)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.vive_localidad_texto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.vive_localidad)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.vive_partido)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.vive_provincia)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.telefono)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.movil)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.f_ingreso)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.prepaga_anterior)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.f_egreso)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.prepaga_proxima)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.volveria)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.motivo_baja_miembro)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.motivo_baja_miembro_agrupado)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.cobrador)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.zona)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.f_alta_grupo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.f_antiguedad1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.promotor)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.tipo_grupo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.presento)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.f_baja)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.motivo_baja_grupo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.motivo_baja_agrupado_grupo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.paciente_cronico)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.id_Padron">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.id_Padron">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.id_Padron">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@*CÓDIGO PARA EL PAGINADOR DE REGISTROS@
+@if (Model.Resultado.Count() > 0)
+{
+    <span>
+        <strong>@Model.TotalRegistros</strong> registros encontrados
+    </span>
+    <span>&nbsp;|&nbsp;</span>
+    <span>
+        Página <strong>@(Model.PaginaActual)</strong> de
+        <strong>@Model.TotalPaginas</strong>
+    </span>
+    <span>&nbsp;|&nbsp;</span>
+}
+else
+{
+    <span>No hay resultados para esta búsqueda</span>
+    <span>&nbsp;|&nbsp;</span>
+}
+
+@if (Model.PaginaActual > 1)
+{
+    @Html.ActionLink("<<", "Index", new { pagina = 1 },
+                    new { @class = "btn btn-sm btn-default" })
+    <span></span>
+    @Html.ActionLink("Anterior", "Index", new { pagina = Model.PaginaActual - 1 },
+                    new { @class = "btn btn-sm btn-default" })
+}
+else
+{
+    @Html.ActionLink("<<", "Index", new { pagina = 1 },
+                    new { @class = "btn btn-sm btn-default disabled" })
+    <span></span>
+    @Html.ActionLink("Anterior", "Index", new { pagina = 1 },
+                    new { @class = "btn btn-sm btn-default disabled" })
+}
+<span></span>
+@if (Model.PaginaActual < Model.TotalPaginas)
+{
+    @Html.ActionLink("Siguiente", "Index", new { pagina = Model.PaginaActual + 1 },
+                    new { @class = "btn btn-sm btn-default" })
+    <span></span>
+    @Html.ActionLink(">>", "Index", new { pagina = Model.TotalPaginas },
+                    new { @class = "btn btn-sm btn-default" })
+}
+else
+{
+    @Html.ActionLink("Siguiente", "Index", new { pagina = Model.TotalPaginas - 1 },
+                    new { @class = "btn btn-sm btn-default disabled" })
+    <span></span>
+    @Html.ActionLink(">>", "Index", new { pagina = Model.TotalPaginas },
+                    new { @class = "btn btn-sm btn-default disabled" })
+}
+@ findecomentario *@
